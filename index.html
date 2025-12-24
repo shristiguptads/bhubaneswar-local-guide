@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bhubaneswar Street Food Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🍛 Bhubaneswar Street Food Guide</h1>
+      <p>Discover authentic local street food based on time and budget</p>
+    </header>
+
+    <main>
+      <div class="input-section">
+        <div class="input-group">
+          <label for="time">Time of Day:</label>
+          <select id="time">
+            <option value="">Select time</option>
+            <option value="morning">Morning (7-11 AM)</option>
+            <option value="afternoon">Afternoon (12-4 PM)</option>
+            <option value="evening">Evening (5-9 PM)</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="budget">Budget (₹):</label>
+          <input type="number" id="budget" placeholder="Enter your budget (₹10-₹100)" min="10" max="100" />
+        </div>
+
+        <button onclick="recommend()" class="recommend-btn">Get Recommendations</button>
+      </div>
+
+      <div id="result" class="result-section"></div>
+
+      <div class="cultural-notes">
+        <h3>💡 Cultural Tips for Bhubaneswar</h3>
+        <ul>
+          <li>Street food stalls peak after 5 PM</li>
+          <li>Summers are hot - locals avoid heavy food in afternoons</li>
+          <li>Hygiene-conscious people prefer known stalls</li>
+          <li>Most street food costs between ₹20–₹50</li>
+          <li>Students prefer food under ₹30</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
